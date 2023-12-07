@@ -1,0 +1,385 @@
+/*Global*/
+
+body,
+html {
+    background: #262626;
+    font-family: Urbanist;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*Header*/
+
+#header {
+    display: flex;
+    width: 100%;
+    height: 66px;
+    flex-shrink: 0;
+    background: #222;
+}
+
+#heLogoText {
+    font-family: Urbanist;
+    font-size: 200%;
+    font-weight: 800;
+    background: linear-gradient(90deg, #0F8B8D 0%, #5F5AA2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 7%;
+    margin-top: 4%;
+}
+
+#heBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 33%;
+    color: white;
+    justify-self: end;
+    padding-top: 1%;
+}
+
+#sliderMenu {
+    height: 66px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #213D29 0%, #00652E 100%);
+}
+
+.hidden{
+    width:0;
+}
+
+.open{
+    width: 360px;    
+}
+
+#mainBody {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /*margin-left: 7%;*/
+}
+
+#pseudoPage1 {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    inset: 0;
+    margin: auto;
+}
+
+#pictureBench {
+    width: 360px;
+    height: 271px;
+    flex-shrink: 0;
+
+    background: url(img/bench.png), lightgray 50% / cover no-repeat;
+}
+
+#declarationContainerP1 {
+    width: 206px;
+    height: 111px;
+    flex-shrink: 0;
+    border-radius: 0px 19px;
+    background: rgba(11, 11, 11, 0.58);
+    margin-top: -39%;
+    margin-left: 1%;
+    padding-left: 4%;
+}
+
+.declarationP1 {
+    width: 191px;
+    font-family: Urbanist;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    background: linear-gradient(180deg, #C1B96B 0%, #108D15 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#subtitleP1-1 {
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 6%;
+    margin-left: 5%;
+}
+
+#paragraphP1-1 {
+    width: 310px;
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 4%;
+    margin-left: 5%;
+}
+
+#pictureWorking {
+    width: 360px;
+    height: 219px;
+    flex-shrink: 0;
+    background: url(img/working.png), lightgray 50% / cover no-repeat;
+    margin-top: 5%;
+}
+
+#subtitleP2-1 {
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 5%;
+}
+
+#paragraphP2-1 {
+    width: 310px;
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 4%;
+}
+
+#pictureBogen {
+    width: 360px;
+    height: 254px;
+    flex-shrink: 0;
+    background: url(img/bogen.png), lightgray 50% / cover no-repeat;
+    margin-top: 5%;
+}
+
+#declarationContainerP2 {
+    width: 206px;
+    height: 111px;
+    flex-shrink: 0;
+    border-radius: 0px 19px;
+    background: rgba(11, 11, 11, 0.58);
+    margin-top: -39%;
+    margin-left: 1%;
+    padding-left: 4%;
+}
+
+.declarationP2 {
+    width: 191px;
+    font-family: Urbanist;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    background: linear-gradient(180deg, #0CB8CF 0%, #103B8D 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#bracket1P2 {
+    flex-shrink: 0;
+    border-radius: 19px;
+    background: linear-gradient(90deg, rgba(173, 255, 109, 0.40) 5.87%, rgba(1, 117, 6, 0.40) 99.36%);
+    margin-top: 6%;
+    transition: height 0.3s ease-in-out;
+}
+.closedb1P2{
+    width: 356px;
+    height: 81px;    
+}
+.openb1P2{
+    width: 356px;
+    height: 150px;
+}
+
+#bracketPar1{
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    left: 6%;
+    margin-top: -22%;
+    margin-left: 7%;
+    transition: opacity 0.2s ease-in-out;
+}
+.bracketParopen{
+    opacity: 1;
+}
+.bracketParclosed{
+    opacity: 0;
+}
+
+#bracketText1 {
+    font-family: Urbanist;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    left: 6%;
+    margin-left: 7%;
+    padding-top: 7%;
+    transition: color 1s ease-in-out;
+}
+.bracketTextclosed{
+    color: #FFF;
+}
+.bracketTextopen{
+    color: #36ff6c;
+}
+
+
+#check1 {
+    margin-left: 84%;
+    margin-top: 11%;
+    font-size: 35px;
+    color: white;
+    transition: opacity 0.2s ease-in-out;
+}
+
+
+
+#bracket2P2 {
+    flex-shrink: 0;
+    border-radius: 19px;
+    background: linear-gradient(90deg, rgba(173, 255, 109, 0.40) 5.87%, rgba(1, 117, 6, 0.40) 99.36%);
+    margin-top: -4%;
+    transition: height 0.3s ease-in-out;
+}
+.closedb2P2{
+    width: 356px;
+    height: 81px;    
+}
+.openb2P2{
+    width: 356px;
+    height: 150px;   
+}
+
+#bracketText2 {
+    font-family: Urbanist;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    left: 6%;
+    margin-left: 7%;
+    padding-top: 7%;
+    transition: color 1s ease-in-out;
+}
+
+#check2 {
+    margin-left: 84%;
+    margin-top: 10%;
+    font-size: 35px;
+    color: white;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#bracketPar2{
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    left: 6%;
+    margin-top: -22%;
+    margin-left: 7%;
+    transition: opacity 0.2s ease-in-out;
+}
+
+
+#bracket3P2 {
+    flex-shrink: 0;
+    border-radius: 19px;
+    background: linear-gradient(90deg, rgba(173, 255, 109, 0.40) 5.87%, rgba(1, 117, 6, 0.40) 99.36%);
+    margin-top: -4%;
+    transition: height 0.3s ease-in-out;
+}
+
+.closedb3P2{
+    width: 356px;
+    height: 81px;    
+}
+.openb3P2{
+    width: 356px;
+    height: 150px;   
+}
+
+#bracketText3 {
+    font-family: Urbanist;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    left: 6%;
+    margin-left: 7%;
+    padding-top: 7%;
+    transition: color 1s ease-in-out;
+}
+
+#bracketPar3{
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    left: 6%;
+    margin-top: -3%;
+    margin-left: 7%;
+    transition: opacity 0.2s ease-in-out;
+}
+
+
+#check3 {
+    margin-left: 138%;
+    margin-top: 17%;
+    font-size: 35px;
+    color: white;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.checkopen{
+    opacity:0;
+}
+.checkclosed{
+    opacity:1;
+}
+
+#declarationP3 {
+    width: 260px;
+    font-family: Urbanist;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    background: linear-gradient(180deg, #FFA800 0%, #EE5600 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 5%;
+}
+
+#paragraphP3 {
+    width: 310px;
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 4%;
+}
