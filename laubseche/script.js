@@ -14,6 +14,8 @@ const bracket3 = document.getElementById("bracket3P2")
 const bracketText3 = document.getElementById("bracketText3")
 const bracketPar3 = document.getElementById("bracketPar3")
 
+const a = 'test'
+
 function closeCheck(){
     check1.classList.remove("checkclosed")
     check2.classList.remove("checkclosed")
